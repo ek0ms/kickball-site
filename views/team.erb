@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title><%= @team %></title>
+    <link rel="stylesheet" href="/stylesheets/app.css">
+  </head>
+
+  <body>
+    <script src="/javascripts/app.js"></script>
+    <h1><%= @team %></h1>
+    <ul>
+      <% @players[@team].each do |position, player| %>
+      <li>
+        <%= "#{position}: #{player}" %> 
+      </li>
+      <% end %>
+    </ul>
+  </body>
+</html>

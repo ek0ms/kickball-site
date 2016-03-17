@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Positions</title>
+    <link rel="stylesheet" href="/stylesheets/app.css">
+  </head>
+
+  <body>
+    <script src="/javascripts/app.js"></script>
+    <h1>Positions</h1>
+    <ul>
+      <% @positions_list.each do |position| %>
+      <li>
+        <a href="positions/<%= position %>"> <%= position %> </a>
+      </li>
+      <% end %>
+    </ul>
+  </body>
+</html>

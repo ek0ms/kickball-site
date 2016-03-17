@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Team List</title>
+    <link rel="stylesheet" href="/stylesheets/app.css">
+  </head>
+
+  <body>
+    <script src="/javascripts/app.js"></script>
+    <h1>Teams</h1>
+    <ul>
+      <% @team_list.each do |team_name| %>
+      <li>
+        <a href="teams/<%= team_name %>"> <%= team_name %></a>
+      </li>
+      <% end %>
+    </ul>
+  </body>
+</html>
